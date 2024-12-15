@@ -7,17 +7,17 @@
 }
 
 body {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
     font-family: "Overlock", sans-serif;
 }
 
 header {
     display: flex;
     justify-content: center;
-    position: fixed;
     height: 100vh;
     width: 300px;
+    position: sticky;
+    top: 0;
     background-color: rgb(34, 35, 35);
 }
 
@@ -42,7 +42,7 @@ ul {
     box-shadow: 0px 0px 50px 15px rgb(0, 0, 0);
 }
 
-#title {
+#name_title {
     color: rgb(124, 119, 119);
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
     letter-spacing: 2px;
@@ -98,7 +98,6 @@ ul {
 }
 
 main {
-    margin-left: 300px;
     background-color: #524f4f;
     display: grid;
     justify-content: center;
@@ -106,7 +105,7 @@ main {
 }
 
 #bg-pic {
-    width: 1600px;
+    width: 1650px;
 }
 
 #name {
@@ -132,7 +131,7 @@ main {
 }
 
 .card {
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
     border-radius: 20px;
     height: 300px;
     width: 300px;
@@ -156,7 +155,7 @@ main {
 
 .card-btn:hover {
     transition: all 0.3s ease;
-    box-shadow: 0px 0px 15px rgb(51, 51, 51);
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
 }
 
 #all {
@@ -205,10 +204,17 @@ main {
 }
 
 .edu-con {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     box-shadow: 0px 0px 10px;
     border-radius: 20px;
     width: 450px;
-    height: 350px;
+    padding: 10px;
+}
+
+.edu-con h1,
+h3 {
+    text-align: center;
 }
 
 .resume {
@@ -217,6 +223,16 @@ main {
     background-color: rgba(67, 70, 70, 0.23);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.338);
     border-radius: 20px;
+}
+
+#download_btn {
+    border: 0;
+    border-radius: 5px;
+    color: #e4e4e4;
+    width: 100px;
+    height: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+    background-color: #3f4141;
 }
 
 .port {
@@ -369,15 +385,35 @@ main {
 .p-h {
     font-size: 40px;
     font-weight: 600;
+    column-gap: 10px;
+    display: flex;
+    align-items: center;
 }
+
 #form1 {
     font-size: 20px;
     font-weight: 800;
     row-gap: 5px;
 }
+
 #form2 {
     width: 700px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
 }
+
+#form2-1 {
+    display: grid;
+
+}
+
+#form2-2 {
+    display: grid;
+    margin-top: 30px;
+    row-gap: 20px;
+}
+
 
 .form2-text {
     font-size: 25px;
