@@ -48,10 +48,11 @@
 
     <main>
 
-        <img src="./IMAGES/background.png" alt="bg-pic" id="bg-pic">
-
-        <p id="name">JAYA VIGNESH </p>
-        <p id="role">I'm a <span id="h_b"></span>.</p>
+        <div id="banner">
+            <!-- <img src="./IMAGES/background.png" alt="bg-pic" id="bg-pic"> -->
+            <p id="name">JAYA VIGNESH </p>
+            <p id="role">I'm a <span id="h_b"></span>.</p>
+        </div>
 
         <div class="about" id="about">
             <h1 class="title">About Me :</h1>
@@ -68,37 +69,10 @@
                             applications. My commitment to clean code, responsive design, and user-focused solutions
                             ensures
                             every project I undertake is both functional and visually compelling.</li>
-                        <li>When I’m not coding, I enjoy exploring new tech trends, contributing to open-source
-                            projects,
-                            and mentoring aspiring developers. Let’s create something amazing together!" Let me know if
-                            you'd like me to refine this for your specific skills or preferences!.</li>
                     </ul>
                 </div>
             </div>
         </div>
-
-        <!-- <div class="education">
-            <h1 class="title">Education :</h1>
-            <div id="edu">
-                <div class="edu-con">
-                    <h1>Panimalar Engineering College</h1>
-                    <h3>Bachelor of Technology</h3>
-                    <p>Information Technology</p>
-                    <p>Percentage: 96%</p>
-                </div>
-                <div class="edu-con">
-                    <h1>Panimalar Polytechnic College</h1>
-                    <h3>Diploma</h3>
-                    <p>Electronic and Communication Engineering</p>
-                    <p>Percentage: 96%</p>
-                </div>
-                <div class="edu-con">
-                    <h1>Kendriya Vidayalaya No.1 AFS</h1>
-                    <h3>Secondary School Certificate</h3>
-                    <p>Percentage: 69.8%</p>
-                </div>
-            </div>
-        </div> -->
 
         <div class="resume" id="resume">
 
@@ -204,7 +178,6 @@
             <h1 class="title">Contact :</h1>
             <form action="">
                 <div id="form">
-
                     <div id="form1" class="form-card">
                         <label for="firstname">Name</label>
                         <input type="text" id="firstname" name="firstname" class="input">
@@ -216,21 +189,44 @@
                     </div>
 
                     <div id="form2" class="form-card">
-
-                        <div id="form2-1">
-                            <p class="p-h"><img src="./ICONS/phone.svg" alt="phone" class="cicon">Contact : </p>
-                            <p class="p-h"><img src="./ICONS/Whatsapp.svg" alt="phone" class="cicon">WhatsApp : </p>
-                            <p class="p-h"><img src="./ICONS/envelope.svg" alt="envelope" class="cicon">Email : </p>
-                            <p class="p-h"><img src="./ICONS/location.svg" alt="envelope" class="cicon">Location : </p>
-                        </div>
-
-                        <div id="form2-2">
-                            <p class="form2-text">+91 7904756954</p>
-                            <p class="form2-text">+91 9444240629</p>
-                            <p class="form2-text">vignesh292a@gmail.com</p>
-                            <p class="form2-text">Tambaram, Chennai, Tamil Nadu, India</p>
-                        </div>
-                        
+                        <table>
+                            <tr>
+                                <th>
+                                    <p class="form2_header"><img src="./ICONS/phone.svg" alt="phone"
+                                            class="cicon">Contact : </p>
+                                </th>
+                                <td>
+                                    <p class="form2-text">+91 7904756954</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p class="form2_header"><img src="./ICONS/Whatsapp.svg" alt="phone"
+                                            class="cicon">WhatsApp : </p>
+                                </th>
+                                <td>
+                                    <p class="form2-text">+91 9444240629</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p class="form2_header"><img src="./ICONS/envelope.svg" alt="envelope"
+                                            class="cicon">Email : </p>
+                                </th>
+                                <td>
+                                    <p class="form2-text">vignesh292a@gmail.com</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p class="form2_header"><img src="./ICONS/location.svg" alt="envelope"
+                                            class="cicon">Location : </p>
+                                </th>
+                                <td>
+                                    <p class="form2-text">Tambaram, Chennai, Tamil Nadu, India</p>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
 
                 </div>
@@ -242,9 +238,9 @@
         </footer>
 
     </main>
-
+    <script src="index.js"></script>
 </body>
 
-<script src="index.js"></script>
+
 
 </html>

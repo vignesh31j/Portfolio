@@ -32,13 +32,14 @@ var products = [
     { img: "./IMAGES/pg1.jpg" },
     { img: "./IMAGES/pro3.png" },
     { img: "./IMAGES/pg2.jpg" },
-    
 ];
 
-const cardContainer = document.getElementsByClassName('port2')[0];
+const cardContainer = document.querySelector('.port2'); 
+if (cardContainer) { 
     products.forEach(product => {
         const card = document.createElement('div');
         card.className = "card";
         card.innerHTML = `<img src="${product.img}" alt="ProductPics" class="card_img">`;
         cardContainer.appendChild(card);
     });
+}
