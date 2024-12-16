@@ -21,3 +21,24 @@ function update(){
 setInterval(()=>{update()},4000);
 
 update()
+
+
+var products = [
+    { img: "./IMAGES/p.jpg" },
+    { img: "./IMAGES/pro4.png" },
+    { img: "./IMAGES/pg.jpg" },
+    { img: "./IMAGES/pro2.png" },
+    { img: "./IMAGES/pro1.png" },
+    { img: "./IMAGES/pg1.jpg" },
+    { img: "./IMAGES/pro3.png" },
+    { img: "./IMAGES/pg2.jpg" },
+    
+];
+
+const cardContainer = document.getElementsByClassName('port2')[0];
+    products.forEach(product => {
+        const card = document.createElement('div');
+        card.className = "card";
+        card.innerHTML = `<img src="${product.img}" alt="ProductPics" class="card_img">`;
+        cardContainer.appendChild(card);
+    });

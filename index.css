@@ -20,13 +20,12 @@ header {
     background-color: rgb(34, 35, 35);
 }
 
-ul {
+.header_ul {
     display: grid;
     margin: 30px;
     grid-row-gap: 20px;
     list-style: none;
     text-align: center;
-
 }
 
 #profile-pic {
@@ -97,7 +96,7 @@ ul {
 }
 
 main {
-    background-color: rgb(190, 197, 202);
+    background-color: #EFE1D1;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -138,6 +137,12 @@ main {
     width: 300px;
 }
 
+.card_img {
+    width: 300px;
+    border-radius: 20px;
+    height: 300px;
+}
+
 .card:hover {
     box-shadow: 0px 0px 20px 2px rgb(0, 0, 0);
 }
@@ -146,21 +151,21 @@ main {
     box-shadow: 0px 0px 5px black;
     background-color: transparent;
     border-radius: 5px;
-    border: 2px solid black;
+    border:0;
     width: 200px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 15px;
-    color: #fafafa;
+    color: #000000;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .card-btn:hover {
     transition: all 0.3s ease;
-    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
 }
 
 #all {
@@ -172,7 +177,6 @@ main {
 .about {
     margin: 25px;
     padding: 25px;
-    background-color: rgba(67, 70, 70, 0.23);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.338);
     border-radius: 20px;
 }
@@ -184,21 +188,21 @@ main {
 }
 
 #pics {
-    background-image: url("./IMAGES/pics.jpg");
+    background-image: url("./IMAGES/Profile\ pic.png");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0px 0px 10px;
-    border-radius: 20px;
-    height: 500px;
+    border-radius: 10px;
     width: 300px;
+    height: 300px;
 }
 
 #details {
     box-shadow: 0px 0px 10px;
     border-radius: 20px;
     width: 1000px;
-    padding: 20px;
-    font-size: 25px;
+    padding: 30px;
+    font-size: 18px;
     font-weight: 400;
     display: grid;
     line-height: 40px;
@@ -231,18 +235,9 @@ h3 {
     text-align: center;
 }
 
-/* .education {
-    margin: 25px;
-    padding: 25px;
-    background-color: rgba(67, 70, 70, 0.23);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.338);
-    border-radius: 20px;
-} */
-
 .resume {
     margin: 25px;
     padding: 25px;
-    background-color: rgba(67, 70, 70, 0.23);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.338);
     border-radius: 20px;
 }
@@ -306,8 +301,8 @@ h3 {
     border: 0;
     border-radius: 8px;
     padding: 5px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.555);
-    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+    background-color: transparent;
     font-size: 20px;
     font-weight: 600;
 }
@@ -315,12 +310,12 @@ h3 {
 #download_btn:hover {
     transition: all 0.3s ease;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.676);
+    background-color: rgb(102, 15, 184);
 }
 
 .port {
     margin: 25px;
     padding: 25px;
-    background-color: rgba(67, 70, 70, 0.23);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.338);
     border-radius: 20px;
     display: grid;
@@ -340,54 +335,6 @@ h3 {
     grid-gap: 20px;
 }
 
-#card1 {
-    background-image: url("./IMAGES/p.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#card2 {
-    background-image: url("./IMAGES/pro4.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#card3 {
-    background-image: url("./IMAGES/pg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#card4 {
-    background-image: url("./IMAGES/pro2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#card5 {
-    background-image: url("./IMAGES/pro1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#card6 {
-    background-image: url("./IMAGES/pg1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#card7 {
-    background-image: url("./IMAGES/pro3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#card8 {
-    background-image: url("./IMAGES/pg2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 #loadmore {
     display: grid;
     justify-content: center;
@@ -400,19 +347,19 @@ h3 {
     font-size: 18px;
     border-radius: 15px;
     border: 0;
-    box-shadow: 0px 0px 10px;
+    box-shadow: 0px 0px 5px;
     background-color: transparent;
 }
 
 .loadmore_btn:hover {
     transition: all 0.3s ease;
     box-shadow: 0px 0px 20px;
+    background-color: rgb(102, 15, 184);
 }
 
 .ser {
     margin: 25px;
     padding: 25px;
-    background-color: rgba(67, 70, 70, 0.23);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.338);
     border-radius: 20px;
 }
@@ -469,7 +416,6 @@ h3 {
 .contact {
     margin: 25px;
     padding: 25px;
-    background-color: rgba(67, 70, 70, 0.23);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.338);
     border-radius: 20px;
 }
@@ -482,7 +428,6 @@ h3 {
 
 .form-card {
     width: 500px;
-    background-color: rgba(67, 70, 70, 0.23);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.338);
     border-radius: 20px;
     display: grid;
@@ -491,7 +436,6 @@ h3 {
 
 .form-card:hover {
     transition: all 0.3s ease;
-    background-color: rgba(67, 70, 70, 0.23);
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.338);
 }
 
@@ -560,7 +504,7 @@ h3 {
 }
 
 footer {
-    background-color: rgb(67, 70, 70);
+    background-color: #3F2E3E;
     display: flex;
     justify-content: center;
     align-items: center;
