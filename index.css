@@ -32,6 +32,12 @@
         font-size: 14px;
         color: white;
     }
+
+    .form2_con {
+        display: grid;
+        row-gap: 10px;
+        margin-bottom: 20px;
+    }
 }
 
 @media  screen and (min-width: 901px){
@@ -92,6 +98,7 @@ body {
     column-gap: 10px;
     row-gap: 20px;
     justify-content: space-evenly;
+    align-items: center;
     margin: 10px;
 }
 
@@ -171,7 +178,9 @@ body {
 
 footer {
     background-color: #3F2E3E;
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100px;
@@ -267,10 +276,6 @@ footer {
 
 /* main content */
 
-main {
-    background-color: #463899;
-}
-
 /* #bg-pic {
     width: 100%;
 } */
@@ -317,7 +322,7 @@ main {
 
 .card-btn {
     box-shadow: 0px 0px 5px black;
-    background-color: transparent;
+    background-color: #f9bf8f6e;
     border-radius: 5px;
     border:0;
     width: 200px;
@@ -391,6 +396,7 @@ main {
     border-radius: 20px;
     row-gap: 20px;
     padding: 10px;
+    background-color: #f9bf8f6e;
 }
 
 .edu-con:hover {
@@ -419,7 +425,7 @@ h3 {
 
 .percentage {
     background-color: white;
-    width: 300px;
+    width: 280px;
     height: 15px;
 }
 
@@ -453,6 +459,13 @@ h3 {
     height: 15px;
 }
 
+#percent6 {
+    background-color: blue;
+    width: 90%;
+    height: 15px;
+}
+
+
 .skills_tag {
     display: flex;
     flex-wrap: wrap;
@@ -461,7 +474,7 @@ h3 {
 }
 
 .skill_btn {
-    margin-top: 20px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
 }
@@ -470,8 +483,8 @@ h3 {
     border: 0;
     border-radius: 8px;
     padding: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
-    background-color: transparent;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.401);
+    background-color: #f9bf8f6e;
     font-size: 20px;
     font-weight: 600;
 }
@@ -510,14 +523,13 @@ h3 {
 }
 
 .loadmore_btn {
-    margin-top: 20px;
     padding: 10px;
     font-weight: 700;
     font-size: 18px;
     border-radius: 15px;
     border: 0;
     box-shadow: 0px 0px 5px;
-    background-color: transparent;
+    background-color: #f9bf8f6e;
 }
 
 .loadmore_btn:hover {
@@ -542,20 +554,25 @@ h3 {
 } */
 
 .ser_icon {
-    width: 35px;
+    width: 30px;
     height: fit-content;
+}
+
+main {
+    background-color: #fee9d7;
 }
 
 .ser_card {
     padding: 20px;
     box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
-    background-color: rgb(209, 210, 210);
+    background-color: #f9bf8f6e;
     border-radius: 20px;
     width: 300px;
     display: grid;
     justify-items: center;
-    row-gap: 30px;
+    row-gap: 20px;
     text-align: start;
+    font-size: 18px;
 }
 
 .ser_card:hover {
@@ -566,13 +583,12 @@ h3 {
 .ser_cards {
     display: flex;
     column-gap: 20px;
-    font-size: 30px;
-    font-weight: 600;
+    font-weight: 800;
     text-decoration: underline;
 }
 
 .ser_img {
-    width: 250px;
+    width: 200px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
@@ -596,15 +612,16 @@ h3 {
 } */
 
 .form-card {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.338);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.338);
     border-radius: 20px;
     display: grid;
     padding: 20px;
+    background-color: #f98f8f36;
 }
 
 .form-card:hover {
     transition: all 0.3s ease;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.338);
+    box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.612);
 }
 
 #form-btn {
@@ -628,12 +645,6 @@ h3 {
     row-gap: 5px;
 } */
 
-#form2 {
-    display: flex;
-    justify-content: center;
-    column-gap: 20px;
-}
-
 .form2_header {
     font-size: 18px;
     font-weight: 800;
@@ -645,13 +656,13 @@ h3 {
 .form2-text {
     font-size: 18px;
     font-weight: 300;
+    margin-left: 10px;
 }
 
 .input {
     border-radius: 5px;
     height: 30px;
     border: 0;
-    width: 300px;
     font-size: 18px;
     text-indent: 10px;
 }
