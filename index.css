@@ -38,6 +38,32 @@
         row-gap: 10px;
         margin-bottom: 20px;
     }
+
+    .percentage {
+        background-color: white;
+        width: 230px;
+        height: 15px;
+    }
+
+    #pics {
+        width: 230px;
+        height: 230px;
+    }
+
+    .card {
+        height: 230px;
+        width: 230px;
+    }
+
+    .card_img {
+        width: 230px;
+        border-radius: 20px;
+        height: 230px;
+    }
+
+    .input {
+        width: 230px;
+    }
 }
 
 @media  screen and (min-width: 901px){
@@ -77,6 +103,33 @@
         font-size: 25px;
         color: white;
     }
+
+    .percentage {
+        background-color: white;
+        width: 270px;
+        height: 15px;
+    }
+
+    #pics {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card {
+        height: 300px;
+        width: 300px;
+    }
+
+    .card_img {
+        width: 300px;
+        border-radius: 20px;
+        height: 300px;
+    }
+
+    .input {
+        width: 300px;
+    }
+
 
 }
 
@@ -178,9 +231,7 @@ body {
 
 footer {
     background-color: #3F2E3E;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 100px;
@@ -306,15 +357,8 @@ footer {
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
-    height: 300px;
-    width: 300px;
 }
 
-.card_img {
-    width: 300px;
-    border-radius: 20px;
-    height: 300px;
-}
 
 .card:hover {
     box-shadow: 0px 0px 20px 2px rgb(0, 0, 0);
@@ -366,8 +410,8 @@ footer {
     background-size: cover;
     box-shadow: 0px 0px 10px;
     border-radius: 10px;
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
 }
 
 /* #details {
@@ -423,11 +467,11 @@ h3 {
     margin: 20px 0px 20px 0px;
 } */
 
-.percentage {
+/* .percentage {
     background-color: white;
-    width: 280px;
+    width: 270px;
     height: 15px;
-}
+} */
 
 #percent1 {
     background-color: blue;
@@ -567,7 +611,7 @@ main {
     box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
     background-color: #f9bf8f6e;
     border-radius: 20px;
-    width: 300px;
+    width: 200px;
     display: grid;
     justify-items: center;
     row-gap: 20px;
@@ -661,6 +705,7 @@ main {
 
 .input {
     border-radius: 5px;
+    /* width: 300px; */
     height: 30px;
     border: 0;
     font-size: 18px;
