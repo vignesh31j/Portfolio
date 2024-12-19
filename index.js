@@ -23,7 +23,15 @@ setInterval(()=>{update()},4000);
 
 update()
 
+// let deleteContent = document.getElementsByClassName('card');
+//     while(deleteContent.length > 0){
+//         deleteContent[0].remove();
+//     }
+
 //Product display function
+
+let deleteContent = document.getElementsByClassName('card');
+
 const cardContainer = document.querySelector('.port2'); 
 var products = [
     { img: "./IMAGES/p.jpg" },
@@ -47,8 +55,10 @@ if (cardContainer) {
 
 const all_btn = document.querySelector('#all');
 all_btn.addEventListener('click',() =>{
-
     setTimeout(() => {
+        while(deleteContent.length > 0){
+                    deleteContent[0].remove();
+                }
         let products = [
             { img: "./IMAGES/p.jpg" },
             { img: "./IMAGES/pro4.png" },
@@ -75,11 +85,14 @@ const ps_btn = document.querySelector('#PS');
 ps_btn.addEventListener('click',() =>{
 
     setTimeout(() => {
+        while(deleteContent.length > 0){
+            deleteContent[0].remove();
+        }
         var ps = [
             { img: "./IMAGES/p.jpg" },
             { img: "./IMAGES/pg.jpg" },
             { img: "./IMAGES/pg1.jpg" },
-            { img: "./IMAGES/pro3.png" }
+            { img: "./IMAGES/pg2.jpg" }
         ];
         
         if (cardContainer) { 
@@ -96,6 +109,9 @@ ps_btn.addEventListener('click',() =>{
 const wd_btn = document.querySelector('#WD');
 wd_btn.addEventListener('click',() =>{
     setTimeout(() =>{
+        while(deleteContent.length > 0){
+            deleteContent[0].remove();
+        }
         var products = [
             { img: "./IMAGES/pro4.png" },
             { img: "./IMAGES/pro2.png" },
@@ -117,6 +133,9 @@ wd_btn.addEventListener('click',() =>{
 const gd_btn = document.querySelector('#GD');
 gd_btn.addEventListener('click',() =>{
     setTimeout(() =>{
+        while(deleteContent.length > 0){
+            deleteContent[0].remove();
+        }
         var products = [
             { img: "./IMAGES/p.jpg" },
             { img: "./IMAGES/pro4.png" },
