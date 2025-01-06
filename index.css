@@ -22,7 +22,7 @@
     }
 
     .edu_img {
-        height: 150px;
+        width: 190px;
         border-radius: 15px;
     }
     
@@ -221,16 +221,6 @@ body {
     font-size: 18px;
     font-weight: 800;
     row-gap: 5px;
-}
-
-footer {
-    background-color: #3F2E3E;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    font-size: 18px;
-    font-weight: 600;
 }
 
 .header_ul {
@@ -586,4 +576,58 @@ td p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+
+footer {
+    background-color: #3F2E3E;
+    display: grid;
+    padding: 20px;
+    row-gap: 40px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+#footer-con {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.footer-cons {
+    width: 300px;
+    display: grid;
+    row-gap: 20px;
+}
+
+.footer-cons h2 {
+    text-decoration: underline;
+}
+
+#copyright {
+    text-align: center;
+}
+
+.footer-list {
+    list-style: none;
+    display: grid;
+    row-gap: 15px;
+}
+
+.footer-list li a {
+    color: white;
+}
+
+#learn-btn {
+    background-color: #5a5cd8;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
 }
