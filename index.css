@@ -90,7 +90,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        
     }
 
     #name {
@@ -193,7 +192,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    column-gap: 20px;
+    column-gap: 100px;
     row-gap: 20px;
 }
 
@@ -581,12 +580,7 @@ td p {
 
 footer {
     background-color: #3F2E3E;
-    display: grid;
-    padding: 20px;
-    row-gap: 40px;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
+    padding: 50px 0px 40px 0px;
     font-size: 18px;
     color: white;
     font-weight: 600;
@@ -596,13 +590,13 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     column-gap: 50px;
     row-gap: 50px;
 }
 
 .footer-cons {
-    width: 300px;
+    width: 200px;
     display: grid;
     row-gap: 20px;
 }
@@ -612,7 +606,10 @@ footer {
 }
 
 #copyright {
+    border-top: 2px solid white;
     text-align: center;
+    margin-top: 60px;
+    padding-top: 40px;
 }
 
 .footer-list {
