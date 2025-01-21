@@ -89,17 +89,49 @@ ps_btn.addEventListener('click',() =>{
             deleteContent[0].remove();
         }
         var ps = [
-            { img: "./IMAGES/p.jpg" },
-            { img: "./IMAGES/pg.jpg" },
-            { img: "./IMAGES/pg1.jpg" },
-            { img: "./IMAGES/pg2.jpg" }
+            { img: "./IMAGES/p.jpg", url:"./IMAGES/p.jpg" },
+            { img: "./IMAGES/pg.jpg", url:"./IMAGES/pg.jpg" },
+            { img: "./IMAGES/pg5.jpg", url:"./IMAGES/pg5.jpg" },
+            { img: "./IMAGES/pg9.jpg", url:"./IMAGES/pg9.jpg" },
+            { img: "./IMAGES/pg11.jpg", url:"./IMAGES/pg11.jpg" },
+            { img: "./IMAGES/p3.jpg", url:"./IMAGES/p3.jpg" },
+            { img: "./IMAGES/pg1.jpg", url:"./IMAGES/pg1.jpg" },
+            { img: "./IMAGES/pg2.jpg", url:"./IMAGES/pg2.jpg" }
         ];
         
         if (cardContainer) { 
             ps.forEach(product => {
                 const card = document.createElement('div');
                 card.className = "card";
-                card.innerHTML = `<img src="${product.img}" alt="ProductPics" class="card_img">`;
+                card.innerHTML = ` <a href="${product.url}" target="_blank"><img src="${product.img}" alt="ProductPics" class="card_img"></a>`;
+                cardContainer.appendChild(card);
+            });
+        }
+    },1000);
+});
+
+const fm_btn = document.querySelector('#FM');
+fm_btn.addEventListener('click',() =>{
+    setTimeout(() =>{
+        while(deleteContent.length > 0){
+            deleteContent[0].remove();
+        }
+        var products = [
+            { img: "./IMAGES/pro4.png",url:"https://vignesh31j.github.io/Profilecard/" },
+            { img: "./IMAGES/pro5.png",url:"https://vignesh31j.github.io/productcard/" },
+            { img: "./IMAGES/pro7.png",url:"https://vignesh31j.github.io/blogpreview/" },
+            { img: "./IMAGES/pro2.png",url:"https://vignesh31j.github.io/productcard/" },
+            { img: "./IMAGES/pro1.png",url:"https://vignesh31j.github.io/blogpreview/" },
+            { img: "./IMAGES/pro8.png",url:"https://vignesh31j.github.io/productcard/" },
+            { img: "./IMAGES/pro9.png",url:"https://vignesh31j.github.io/blogpreview/" },
+            { img: "./IMAGES/pro3.png",url:"https://vignesh31j.github.io/previewcard/" }
+        ];
+
+        if (cardContainer) { 
+            products.forEach(product => {
+                const card = document.createElement('div');
+                card.className = "card";
+                card.innerHTML = ` <a href="${product.url}" target="_blank"><img src="${product.img}" alt="ProductPics" class="card_img"></a>`;
                 cardContainer.appendChild(card);
             });
         }
@@ -113,17 +145,21 @@ wd_btn.addEventListener('click',() =>{
             deleteContent[0].remove();
         }
         var products = [
-            { img: "./IMAGES/pro4.png" },
-            { img: "./IMAGES/pro2.png" },
-            { img: "./IMAGES/pro1.png" },
-            { img: "./IMAGES/pro3.png" }
+            { img: "", url:"" },
+            { img: "", url:"" },
+            { img: "", url:"" },
+            { img: "", url:"" },
+            { img: "", url:"" },
+            { img: "", url:"" },
+            { img: "", url:"" },
+            { img: "", url:"" }
         ];
 
         if (cardContainer) { 
             products.forEach(product => {
                 const card = document.createElement('div');
                 card.className = "card";
-                card.innerHTML = `<img src="${product.img}" alt="ProductPics" class="card_img">`;
+                card.innerHTML = ` <a href="${product.url}" target="_blank"><img src="${product.img}" alt="ProductPics" class="card_img"></a>`;
                 cardContainer.appendChild(card);
             });
         }
@@ -137,10 +173,14 @@ gd_btn.addEventListener('click',() =>{
             deleteContent[0].remove();
         }
         var products = [
-            { img: "./IMAGES/p.jpg" },
-            { img: "./IMAGES/pro4.png" },
-            { img: "./IMAGES/pg.jpg" },
-            { img: "./IMAGES/pro2.png" }
+            { img: "", url:"" },
+            { img: "", url:"" },
+            { img: "", url:"" },
+            { img: "", url:"" },
+            { img: "", url:"" },
+            { img: "", url:"" },
+            { img: "", url:"" },
+            { img: "", url:"" }
         ];
 
         if (cardContainer) { 
