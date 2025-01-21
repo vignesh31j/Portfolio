@@ -123,7 +123,7 @@ fm_btn.addEventListener('click',() =>{
             { img: "./IMAGES/pro2.png",url:"https://vignesh31j.github.io/productcard/" },
             { img: "./IMAGES/pro1.png",url:"https://vignesh31j.github.io/blogpreview/" },
             { img: "./IMAGES/pro8.png",url:"https://vignesh31j.github.io/productcard/" },
-            { img: "./IMAGES/pro9.png",url:"https://vignesh31j.github.io/blogpreview/" },
+            { img: "./IMAGES/pro10.png",url:"https://vignesh31j.github.io/blogpreview/" },
             { img: "./IMAGES/pro3.png",url:"https://vignesh31j.github.io/previewcard/" }
         ];
 
