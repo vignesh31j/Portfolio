@@ -180,7 +180,7 @@ gd_btn.addEventListener('click',() =>{
             { img: "./IMAGES/g13.png", url:"./IMAGES/g13.png", description:"" },
             { img: "./IMAGES/g7.png", url:"./IMAGES/7.png", description:"" },
             { img: "./IMAGES/g2.png", url:"./IMAGES/g2.png", description:"" },
-            // { img: "./IMAGES/", url:"./IMAGES/", description:"" }
+            { img: "./IMAGES/GD1.jpg", url:"./IMAGES/GD1.jpg", description:"" }
         ];
 
         if (cardContainer) { 
