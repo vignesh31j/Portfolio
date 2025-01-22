@@ -138,33 +138,33 @@ fm_btn.addEventListener('click',() =>{
     },1000);
 });
 
-const wd_btn = document.querySelector('#WD');
-wd_btn.addEventListener('click',() =>{
-    setTimeout(() =>{
-        while(deleteContent.length > 0){
-            deleteContent[0].remove();
-        }
-        var products = [
-            { img: "", url:"", description:"" },
-            { img: "", url:"", description:"" },
-            { img: "", url:"", description:"" },
-            { img: "", url:"", description:"" },
-            { img: "", url:"", description:"" },
-            { img: "", url:"", description:"" },
-            { img: "", url:"", description:"" },
-            { img: "", url:"", description:"" }
-        ];
+// const wd_btn = document.querySelector('#WD');
+// wd_btn.addEventListener('click',() =>{
+//     setTimeout(() =>{
+//         while(deleteContent.length > 0){
+//             deleteContent[0].remove();
+//         }
+//         var products = [
+//             { img: "", url:"", description:"" },
+//             { img: "", url:"", description:"" },
+//             { img: "", url:"", description:"" },
+//             { img: "", url:"", description:"" },
+//             { img: "", url:"", description:"" },
+//             { img: "", url:"", description:"" },
+//             { img: "", url:"", description:"" },
+//             { img: "", url:"", description:"" }
+//         ];
 
-        if (cardContainer) { 
-            products.forEach(product => {
-                const card = document.createElement('div');
-                card.className = "card";
-                card.innerHTML = `<a href="${product.url}" target="_blank"><img src="${product.img}" alt="ProductPics" class="card_img"><p class="card-description">${product.description}</p></a>`;
-                cardContainer.appendChild(card);
-            });
-        }
-    },1000);
-});
+//         if (cardContainer) { 
+//             products.forEach(product => {
+//                 const card = document.createElement('div');
+//                 card.className = "card";
+//                 card.innerHTML = `<a href="${product.url}" target="_blank"><img src="${product.img}" alt="ProductPics" class="card_img"><p class="card-description">${product.description}</p></a>`;
+//                 cardContainer.appendChild(card);
+//             });
+//         }
+//     },1000);
+// });
 
 const gd_btn = document.querySelector('#GD');
 gd_btn.addEventListener('click',() =>{
@@ -175,12 +175,12 @@ gd_btn.addEventListener('click',() =>{
         var products = [
             { img: "./IMAGES/g1.png", url:"./IMAGES/GD.jpg", description:"" },
             { img: "./IMAGES/g.png", url:"./IMAGES/GD0.jpg", description:"" },
-            { img: "", url:"", description:"" },
-            { img: "", url:"", description:"" },
-            { img: "", url:"", description:"" },
-            { img: "", url:"", description:"" },
-            { img: "", url:"", description:"" },
-            { img: "", url:"", description:"" }
+            { img: "./IMAGES/g11.png", url:"./IMAGES/g11.png", description:"" },
+            { img: "./IMAGES/g10.png", url:"./IMAGES/g10.png", description:"" },
+            { img: "./IMAGES/g13.png", url:"./IMAGES/g13.png", description:"" },
+            { img: "./IMAGES/g7.png", url:"./IMAGES/7.png", description:"" },
+            { img: "./IMAGES/g2.png", url:"./IMAGES/g2.png", description:"" },
+            // { img: "./IMAGES/", url:"./IMAGES/", description:"" }
         ];
 
         if (cardContainer) { 
