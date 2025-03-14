@@ -131,7 +131,7 @@ fm_btn.addEventListener('click',() =>{
             products.forEach(product => {
                 const card = document.createElement('div');
                 card.className = "card";
-                card.innerHTML = `<a href="${product.url}" target="_blank"><img src="${product.img}" alt="ProductPics" class="card_img"><p class="card-description">${product.description}</p></a>`;
+                card.innerHTML = `<a href="${product.url}" target="_blank" class="card-a"><img src="${product.img}" alt="ProductPics" class="card_img"><p class="card-description">${product.description}</p></a>`;
                 cardContainer.appendChild(card);
             });
         }

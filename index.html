@@ -13,9 +13,47 @@
 
     <header>
         <nav>
-            <ul class="header_ul">
+            <ul class="header_ul" id="menu">
                 <li><img src="./IMAGES/Profile pic.png" alt="profile-pic" id="profile-pic"></li>
                 <li id="name_title">JAYA VIGNESH </li>
+                <div class="dropdown">
+                    <span><img src="./ICONS/Menu.svg" alt="" id="menuicon"></span>
+                    <div class="dropdown-content">
+                      <li id="social">
+                          <a href="https://wa.link/b0uy0w" target="_blank"><img src="./ICONS/whatsappwhite.svg"
+                                   alt="WhatsApp" class="icons"></a>
+                          <a href="https://www.instagram.com/_v_i_g_n_e_s_h_v_i_c_k_y_/" target="_blank"><img
+                                  src="./ICONS/instawhite.svg" alt="instagram" class="icons"></a>
+                          <a href="https://www.linkedin.com/in/jaya-vignesh-a-152176238/" target="_blank"><img
+                                  src="./ICONS/linkedinwhite.svg" alt="linkedin" class="icons"></a>
+                          <a href="https://github.com/vignesh31j" target="_blank"><img src="./ICONS/github.svg"
+                                  alt="github" class="icons"></a>
+                          <a href="https://www.frontendmentor.io/profile/vignesh31j" target="_blank"><img
+                                  src="./ICONS/frontendmentor.svg" alt="Frontendmentor" class="icons"></a>
+                          
+                          </li>
+                      <hr id="hr">  
+                      <li><a href="#banner"><button class="head-btn"><img src="./ICONS/home.svg" alt="home" class="icon">
+                                  Home</button></a>
+                      </li>
+                      <li><a href="#about"><button class="head-btn"><img src="./ICONS/user.svg" alt="user" class="icon">
+                                  About</button></a></li>
+                      <li><a href="Jaya Vignesh A Resume.pdf" download="jaya vignesh resume"><button class="head-btn"><img
+                                      src="./ICONS/document.svg" alt="document" class="icon">
+                                  Resume</button></a></li>
+                      <li><a href="#port"><button class="head-btn"><img src="./ICONS/envelope.svg" alt="envelope"
+                                      class="icon">
+                                  Portfolio</button></a></li>
+                      <li><a href="#ser"><button class="head-btn"><img src="./ICONS/layers.svg" alt="layers" class="icon">
+                                  Services</button></a></li>
+                      <li><a href="contact.html"><button class="head-btn"><img src="./ICONS/phone.svg" alt="phone" class="icon">
+                                  Contact</button></a></li>
+                      <hr id="hr">
+                  
+                    </div>
+                </div>                             
+            </ul>
+            <ul class="header_ul" id="menubar">  
                 <li id="social">
                     <a href="https://wa.link/b0uy0w" target="_blank"><img src="./ICONS/whatsappwhite.svg"
                              alt="WhatsApp" class="icons"></a>
@@ -28,10 +66,8 @@
                     <a href="https://www.frontendmentor.io/profile/vignesh31j" target="_blank"><img
                             src="./ICONS/frontendmentor.svg" alt="Frontendmentor" class="icons"></a>
                     
-                </li>
-
-                <hr id="hr">
-
+                    </li>
+                <hr id="hr">  
                 <li><a href="#banner"><button class="head-btn"><img src="./ICONS/home.svg" alt="home" class="icon">
                             Home</button></a>
                 </li>
@@ -45,7 +81,7 @@
                             Portfolio</button></a></li>
                 <li><a href="#ser"><button class="head-btn"><img src="./ICONS/layers.svg" alt="layers" class="icon">
                             Services</button></a></li>
-                <li><a href="#contact"><button class="head-btn"><img src="./ICONS/phone.svg" alt="phone" class="icon">
+                <li><a href="contact.html"><button class="head-btn"><img src="./ICONS/phone.svg" alt="phone" class="icon">
                             Contact</button></a></li>
                 <hr id="hr">
 
@@ -115,10 +151,11 @@
             <div class="skill_con">
                 <div class="skills_tag"><img src="./ICONS/HTML.svg" alt="HTML_logo" class="skills_logo"> HTML </div>
                 <div class="skills_tag"><img src="./ICONS/CSS.svg" alt="CSS_logo" class="skills_logo"> CSS </div>
-                <!-- <div class="skills_tag"><img src="./ICONS/Bootstrap.svg" alt="Bootstrap_logo" class="skills_logo"> Bootstrap </div> -->
+                <div class="skills_tag"><img src="./ICONS/Bootstrap.svg" alt="Bootstrap_logo" class="skills_logo"> Bootstrap </div>
                 <div class="skills_tag"><img src="./ICONS/JS.svg" alt="JavaScript_logo" class="skills_logo"> JavaScript </div>
                 <div class="skills_tag"><img src="./ICONS/ReactJS.svg" alt="ReactJS_Logo" class="skills_logo"> ReactJS </div>
-                <div class="skills_tag"><img src="./ICONS/nodejs1.svg" alt="NodeJS" class="skills_logo"> NodeJS </div>
+                <div class="skills_tag"><img src="./ICONS/Angular.svg" alt="ReactJS_Logo" class="skills_logo"> AngularJS </div>
+                <!-- <div class="skills_tag"><img src="./ICONS/nodejs1.svg" alt="NodeJS" class="skills_logo"> NodeJS </div> -->
                 <div class="skills_tag"><img src="./ICONS/Git.svg" alt="Git_logo" class="skills_logo"> Git </div>
                 <!-- <div class="skills_tag"><img src="./ICONS/github.svg" alt="Github_logo" class="skills_logo"> GitHub </div> -->
                 <!-- <div class="skills_tag"><img src="./ICONS/JIRA.svg" alt="Jira_logo" class="skills_logo"> Jira</div> -->
@@ -191,7 +228,7 @@
             </div>
         </div>
 
-        <div class="contact" id="contact">
+        <!-- <div class="contact" id="contact">
             <h1 class="title">Contact :</h1>
             <form id="contact-form" onsubmit="return sendEmail();">
                 <div id="form">
@@ -252,7 +289,7 @@
                     </div>
                 </div>
             </form>
-        </div>
+        </div> -->
 
         <footer>
             <div id="footer-con">
@@ -260,7 +297,7 @@
                     <h2> Lets talk about it </h2>
                     <div>Come with your vision, and let's bring your project to
                         life together with creative solutions and expert execution.</div>
-                    <p><a href="#about" id="learn-btn">Learn more</a></p>
+                    <p><a href="contact.html" id="learn-btn">Learn more</a></p>
                 </div>
 
                 <div class="footer-cons">
@@ -315,11 +352,10 @@
 
     <script src="index.js"></script>
     <!-- // EmailJS SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script> -->
     <!-- // SweetAlert2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script src="contact.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <!-- <script src="contact.js"></script> -->
 
 </body>
 
