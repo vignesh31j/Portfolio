@@ -9,6 +9,9 @@
 
     header {
         background-color: rgb(34, 35, 35);
+        position: sticky;
+        top: 0px;
+        z-index: 1;
     }
 
     .dropdown {
