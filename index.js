@@ -1,9 +1,11 @@
 // Role display function
 let assign = [
+    {h_b : "Web Designer"},
+    {h_b : "Freelancer"},
     {h_b : "Web Developer"},
     {h_b : "Graphic Designer"},
     {h_b : "Photographer"},
-    {h_b : "freelancer"},
+    
 ];
 
 let text = document.querySelector('#h-b');
