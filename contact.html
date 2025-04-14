@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaya Vignesh | Contact</title>
+    <link rel="icon" type="image/png" href="./IMAGES/Profile pic.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body >
+    <div class="contact" id="contact">
+        <h1 class="title">Contact :</h1>
+        <form id="contact-form" onsubmit="return sendEmail();">
+            <div id="form">
+                <div id="form1" class="form-card">
+                    <label for="firstname">Name :</label>
+                    <input type="text" id="firstname" name="firstname" class="input" placeholder="Your Name">
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" class="input" placeholder="Your Email">
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" class="input" placeholder="Your Message"></textarea>
+
+                    <button id="form-btn" type="submit">Send Message</button>
+                </div>
+                <div id="form2" class="form-card">
+                    <table>
+                        <tr class="form2_con">
+                            <th>
+                                <p class="form2_header"><img src="./ICONS/phone.svg" alt="phone"
+                                        class="cicon">Contact :
+                                </p>
+                            </th>
+                            <td>
+                                <p class="form2-text"><a href="tel:7904756954">+91 7904756954</a></p>
+                            </td>
+                        </tr>
+                        <tr class="form2_con">
+                            <th>
+                                <p class="form2_header"><img src="./ICONS/Whatsapp.svg" alt="phone"
+                                        class="cicon">WhatsApp :
+                                </p>
+                            </th>
+                            <td>
+                                <p class="form2-text"><a href="https://wa.link/b0uy0w" target="_blank">+91 9444240629</a></p>
+                            </td>
+                        </tr>
+                        <tr class="form2_con">
+                            <th>
+                                <p class="form2_header"><img src="./ICONS/envelope.svg" alt="envelope"
+                                        class="cicon">Email :
+                                </p>
+                            </th>
+                            <td>
+                                <p class="form2-text"><a href="mailto:vignesh292a@gmail.com">vignesh292a@gmail.com</a></p>
+                            </td>
+                        </tr>
+                        <tr class="form2_con">
+                            <th>
+                                <p class="form2_header"><img src="./ICONS/location.svg" alt="envelope"
+                                        class="cicon">Location : </p>
+                            </th>
+                            <td>
+                                <p class="form2-text"><a href="https://maps.app.goo.gl/448YtKotbwkagJNt6" target="_blank">Tambaram, Chennai, Tamil Nadu, India</a></p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- // EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- // SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="contact.js"></script>
+</body>
+</html>
